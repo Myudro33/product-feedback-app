@@ -1,7 +1,29 @@
 {
   "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+    {
+      "id": "1",
+      "title": "a 1 title",
+      "likes": 100,
+      "description": "some description",
+      "type": "Feature",
+      "comments": []
+    },
+    {
+      "id": "2",
+      "title": "a 2 title",
+      "likes": 50,
+      "description": "some 2 description",
+      "type": "UX",
+      "comments": []
+    },
+    {
+      "id": "3",
+      "title": "a 3 title",
+      "likes": 80,
+      "description": "some 3 description",
+      "type": "Bug",
+      "comments": []
+    }
   ],
   "comments": [
     { "id": "1", "text": "a comment about post 1", "postId": "1" },
