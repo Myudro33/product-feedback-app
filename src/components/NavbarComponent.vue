@@ -19,7 +19,7 @@
                 <h1>Least Comments</h1>
             </div>
         </div>
-        <button class="p-4 font-bold h-full bg-purple-600 flex items-center rounded-xl">+ Add Feedback</button>
+        <RouterLink :to="{name:'add-feedback'}" class="p-4 font-bold h-full bg-purple-600 flex items-center rounded-xl">+ Add Feedback</RouterLink>
     </div>
 </template>
 
