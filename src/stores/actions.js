@@ -1,3 +1,4 @@
+import store from '../../data/db.json'
 export default {
   async addLike(id) {
     const index = (element) => element.id == id
@@ -32,6 +33,9 @@ export default {
     } catch (error) {
       alert(error)
     }
+  },
+  commentQuantity(id) {
+    return store.comments.filter((item) => item.postId == id).length
   },
   async getPosts() {
     const res = await fetch('http://localhost:3000/posts')

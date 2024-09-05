@@ -35,7 +35,7 @@ const postStore = usePostStore()
         <div class="flex items-center">
           <CommentIcon />
           <h1 class="ml-2 font-bold">
-            {{ item.comments.length }}
+            {{ postStore.commentQuantity(item.id) }}
           </h1>
         </div>
       </div>

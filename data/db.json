@@ -18,5 +18,9 @@
       "comments": [],
       "liked": true
     }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "3" },
+    { "id": "2", "text": "another comment about post 1", "postId": "3" }
   ]
 }
