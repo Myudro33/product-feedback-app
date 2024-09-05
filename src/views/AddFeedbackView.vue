@@ -26,7 +26,7 @@
         ></textarea>
         <div class="flex justify-end items-center">
           <router-link :to="{ name: 'home' }">Cancel</router-link>
-          <button class="ml-4">Add feedback</button>
+          <button @click="postStore.addPost(data)" class="ml-4">Add feedback</button>
         </div>
       </div>
     </div>
@@ -37,6 +37,8 @@
 import ArrowLeft from '@/components/icons/ArrowLeft.vue'
 import NewFeedbackIcon from '@/components/icons/NewFeedbackIcon.vue'
 import { ref } from 'vue'
+import { usePostStore } from '@/stores'
+const postStore = usePostStore()
 const data = ref({
   title: '',
   selected: '',

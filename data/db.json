@@ -23,10 +23,42 @@
       "description": "some 3 description",
       "type": "Bug",
       "comments": []
+    },
+    {
+      "id": "32634",
+      "title": "nika",
+      "description": "qanashvili",
+      "type": "Enhancement",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "83087",
+      "title": "wdadawd",
+      "description": "awdawdawd",
+      "type": "AI",
+      "likes": 0,
+      "comments": []
+    },
+    {
+      "id": "58110",
+      "title": "axali",
+      "description": "awdnjawnd",
+      "type": "UX",
+      "likes": 0,
+      "comments": []
     }
   ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ]
 }
