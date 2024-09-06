@@ -12,7 +12,9 @@ const postStore = usePostStore()
     <SidebarComponent />
     <div class="w-[60vw] ml-10 h-full flex flex-col">
       <NavbarComponent />
-      <div
+
+      <router-link
+        :to="{ name: 'detail-feedback', params: { id: item.id } }"
         v-for="(item, index) in postStore.posts"
         :key="index"
         class="w-full h-40 flex justify-between rounded-xl p-8 bg-green-700 mt-5"
@@ -38,7 +40,7 @@ const postStore = usePostStore()
             {{ postStore.commentQuantity(item.id) }}
           </h1>
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>
