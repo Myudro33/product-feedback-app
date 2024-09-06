@@ -5,7 +5,7 @@
       "title": "a 3 title",
       "likes": 67,
       "description": "some 3 description",
-      "type": "Bug",
+      "type": "Feature",
       "status": "live",
       "liked": false,
       "comments": [
@@ -27,7 +27,7 @@
       "id": "49115",
       "title": "awdawd",
       "description": "dnahwdjhawbdhj bawhjdb hawbdhjbawjhdb ahjwbdhb ahwjdb",
-      "type": "UX",
+      "type": "Feature",
       "status": "planned",
       "likes": 0,
       "liked": false,
@@ -44,7 +44,8 @@
       "id": "48455",
       "title": "qanashvili",
       "description": "qanashvili",
-      "type": "Bug",
+      "type": "Feature",
+      "status": "live",
       "likes": 0,
       "comments": []
     }

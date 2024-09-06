@@ -5,7 +5,9 @@
         <router-link class="flex items-center" :to="{ name: 'home' }"
           ><ArrowLeft class="mr-2" /> Go Back</router-link
         >
-        <button>Edit feedback</button>
+        <router-link :to="{ name: 'edit-feedback', params: { id: postStore.posts[item].id } }"
+          >Edit feedback</router-link
+        >
       </div>
       <FeedbackComponent
         :id="postStore.posts[item].id"

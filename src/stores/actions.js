@@ -1,5 +1,26 @@
 import store from '../../data/db.json'
 export default {
+  async editPost(id, data) {
+    const index = (element) => element.id == id
+    const item = this.posts.findIndex(index)
+    await fetch(`http://localhost:3000/posts/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify({
+        ...this.posts[item],
+        title: data.title,
+        type: data.type,
+        status: data.status,
+        description: data.description
+      })
+    })
+    this.posts[item] = {
+      ...this.posts[item],
+      title: data.title,
+      type: data.type,
+      status: data.status,
+      description: data.description
+    }
+  },
   getSinglePostCommentsUser(id) {
     const index = (element) => element.id == id
     const item = store.profiles.findIndex(index)
