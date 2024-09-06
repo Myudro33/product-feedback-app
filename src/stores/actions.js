@@ -1,5 +1,10 @@
 import store from '../../data/db.json'
 export default {
+  getSinglePostCommentsUser(id) {
+    const index = (element) => element.id == id
+    const item = store.profiles.findIndex(index)
+    return store.profiles[item]
+  },
   async getSinglePost(id) {
     await fetch(`http://localhost:3000/posts/${id}?_embed=comments`)
       .then((res) => res.json())
