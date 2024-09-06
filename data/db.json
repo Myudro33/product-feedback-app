@@ -27,8 +27,8 @@
       "title": "awdawd",
       "description": "dnahwdjhawbdhj bawhjdb hawbdhjbawjhdb ahjwbdhb ahwjdb",
       "type": "UX",
-      "likes": 1,
-      "liked": true,
+      "likes": 0,
+      "liked": false,
       "comments": [
         {
           "id": "3",

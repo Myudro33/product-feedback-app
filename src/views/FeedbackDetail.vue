@@ -8,12 +8,12 @@
         <button>Edit feedback</button>
       </div>
       <FeedbackComponent
-        :id="postStore.singlePost.id"
-        :description="postStore.singlePost.description"
-        :liked="postStore.singlePost.liked"
-        :likes="postStore.singlePost.likes"
-        :title="postStore.singlePost.title"
-        :type="postStore.singlePost.type"
+        :id="postStore.posts[item].id"
+        :description="postStore.posts[item].description"
+        :liked="postStore.posts[item].liked"
+        :likes="postStore.posts[item].likes"
+        :title="postStore.posts[item].title"
+        :type="postStore.posts[item].type"
         :link="false"
       />
       <CommentComponent
@@ -35,4 +35,6 @@ import FeedbackComponent from '@/components/FeedbackComponent.vue'
 const postStore = usePostStore()
 const route = useRoute()
 postStore.getSinglePost(route.params.id)
+const index = (element) => element.id == route.params.id
+const item = postStore.posts.findIndex(index)
 </script>

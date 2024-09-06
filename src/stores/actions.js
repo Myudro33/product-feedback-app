@@ -9,7 +9,6 @@ export default {
     await fetch(`http://localhost:3000/posts/${id}?_embed=comments`)
       .then((res) => res.json())
       .then((response) => {
-        this.singlePost = response
         this.singlePostComments = response.comments
       })
   },
