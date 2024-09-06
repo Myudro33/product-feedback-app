@@ -32,6 +32,7 @@ export default {
       id: String(Math.floor(Math.random() * 99999)),
       title: data.title,
       description: data.description,
+      status: 'suggestion',
       type: data.selected,
       likes: 0,
       comments: []

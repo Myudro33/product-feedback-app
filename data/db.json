@@ -6,6 +6,7 @@
       "likes": 67,
       "description": "some 3 description",
       "type": "Bug",
+      "status": "live",
       "liked": false,
       "comments": [
         {
@@ -27,6 +28,7 @@
       "title": "awdawd",
       "description": "dnahwdjhawbdhj bawhjdb hawbdhjbawjhdb ahjwbdhb ahwjdb",
       "type": "UX",
+      "status": "planned",
       "likes": 0,
       "liked": false,
       "comments": [
@@ -37,6 +39,14 @@
           "profileId": "3"
         }
       ]
+    },
+    {
+      "id": "48455",
+      "title": "qanashvili",
+      "description": "qanashvili",
+      "type": "Bug",
+      "likes": 0,
+      "comments": []
     }
   ],
   "comments": [
