@@ -1,5 +1,13 @@
 import store from '../../data/db.json'
 export default {
+  async getSinglePost(id) {
+    await fetch(`http://localhost:3000/posts/${id}?_embed=comments`)
+      .then((res) => res.json())
+      .then((response) => {
+        this.singlePost = response
+        this.singlePostComments = response.comments
+      })
+  },
   async addLike(id) {
     const index = (element) => element.id == id
     const item = this.posts.findIndex(index)
@@ -38,7 +46,7 @@ export default {
     return store.comments.filter((item) => item.postId == id).length
   },
   async getPosts() {
-    const res = await fetch('http://localhost:3000/posts')
+    const res = await fetch('http://localhost:3000/posts?_embed=comments')
     const data = await res.json()
     this.posts = data
   }
