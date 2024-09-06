@@ -33,9 +33,12 @@
           v-model="data.description"
           class="w-full h-20 resize-none outline-none p-2 rounded-md"
         ></textarea>
-        <div class="flex justify-end items-center">
-          <button @click="$router.go(-1)">Cancel</button>
-          <button @click="submit" class="ml-4">Add feedback</button>
+        <div class="flex justify-between items-center">
+          <button @click="deletePost">delete</button>
+          <div>
+            <button @click="$router.go(-1)">Cancel</button>
+            <button @click="submit" class="ml-4">Add feedback</button>
+          </div>
         </div>
       </div>
     </div>
@@ -62,5 +65,9 @@ const data = ref({
 const submit = () => {
   postStore.editPost(route.params.id, data.value)
   router.go(-1)
+}
+const deletePost = () => {
+  postStore.deletePost(route.params.id)
+  router.go(-2)
 }
 </script>

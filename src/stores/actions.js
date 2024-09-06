@@ -1,5 +1,11 @@
 import store from '../../data/db.json'
 export default {
+  async deletePost(id) {
+    await fetch(`http://localhost:3000/posts/${id}?_dependent=comments`, {
+      method: 'DELETE'
+    })
+    this.posts = this.posts.filter((post) => post.id !== id)
+  },
   async editPost(id, data) {
     const index = (element) => element.id == id
     const item = this.posts.findIndex(index)
