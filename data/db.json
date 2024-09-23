@@ -1,99 +1,34 @@
 {
   "posts": [
     {
-      "id": "3",
-      "title": "a 3 title",
-      "likes": 67,
-      "description": "some 3 description",
-      "type": "Feature",
-      "status": "live",
-      "liked": false,
       "comments": [
         {
-          "id": "1",
-          "text": "a comment about post 1",
+          "id": "73582",
           "postId": "3",
-          "profileId": "2"
+          "text": "nikatest"
         },
         {
-          "id": "2",
-          "text": "another comment about post 1",
+          "id": "44397",
           "postId": "3",
-          "profileId": "1"
-        }
-      ]
-    },
-    {
-      "id": "49115",
-      "title": "awdawd",
-      "description": "dnahwdjhawbdhj bawhjdb hawbdhjbawjhdb ahjwbdhb ahwjdb",
-      "type": "Feature",
-      "status": "planned",
-      "likes": 0,
-      "liked": false,
-      "comments": [
+          "text": "test"
+        },
         {
-          "id": "3",
-          "text": "a comment about post 49115",
-          "postId": "49115",
-          "profileId": "3"
+          "id": "93113",
+          "postId": "3",
+          "text": "test2"
+        },
+        {
+          "id": "56874",
+          "postId": "3",
+          "text": "test3"
+        },
+        {
+          "id": "29175",
+          "postId": "3",
+          "text": "test4"
         }
-      ]
-    },
-    {
-      "id": "48455",
-      "title": "qanashvili",
-      "description": "qanashvili",
-      "type": "Feature",
-      "status": "live",
-      "likes": 0,
-      "comments": []
-    }
-  ],
-  "comments": [
-    {
-      "id": "1",
-      "text": "a comment about post 1",
-      "postId": "3",
-      "profileId": "2"
-    },
-    {
-      "id": "2",
-      "text": "another comment about post 1",
-      "postId": "3",
-      "profileId": "1"
-    },
-    {
-      "id": "3",
-      "text": "a comment about post 49115",
-      "postId": "49115",
-      "profileId": "3"
-    }
-  ],
-  "profiles": [
-    {
-      "id": "1",
-      "fullName": "nika elijah",
-      "username": "myudro33",
-      "image": "../src/assets/user-images/image-elijah.jpg"
-    },
-    {
-      "id": "2",
-      "fullName": "luka javier",
-      "username": "luka",
-      "image": "../src/assets/user-images/image-javier.jpg"
-    },
-    {
-      "id": "3",
-      "fullName": "gio james",
-      "username": "gio",
-      "image": "../src/assets/user-images/image-james.jpg"
-    },
-    {
-      "id": "4",
-      "fullName": "saba george",
-      "username": "saba",
-      "image": "../src/assets/user-images/image-george.jpg"
+      ],
+      "id": "3"
     }
   ]
 }

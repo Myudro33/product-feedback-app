@@ -1,7 +1,33 @@
-import store from '../../data/db.json'
 export default {
+  async AddComment(id, text_value) {
+    const newComment = {
+      id: String(Math.floor(Math.random() * 99999)),
+      postId: id,
+      text: text_value
+    }
+    await fetch(`http://localhost:3000/posts/${id}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch the item')
+        }
+        return response.json()
+      })
+      .then((item) => {
+        const updatedComments = [...item.comments, newComment]
+        return fetch(`http://localhost:3000/posts/${id}`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ comments: updatedComments })
+        })
+      })
+      .then((updatedItem) => {
+        console.log('Updated item with new comment:', updatedItem)
+      })
+  },
   async deletePost(id) {
-    await fetch(`http://localhost:3000/posts/${id}?_dependent=comments`, {
+    await fetch(`http://localhost:3000/posts/${id}`, {
       method: 'DELETE'
     })
     this.posts = this.posts.filter((post) => post.id !== id)
@@ -27,16 +53,11 @@ export default {
       description: data.description
     }
   },
-  getSinglePostCommentsUser(id) {
-    const index = (element) => element.id == id
-    const item = store.profiles.findIndex(index)
-    return store.profiles[item]
-  },
   async getSinglePost(id) {
-    await fetch(`http://localhost:3000/posts/${id}?_embed=comments`)
-      .then((res) => res.json())
+    await fetch(`http://localhost:3000/posts/${id}`)
+      .then((item) => item.json())
       .then((response) => {
-        this.singlePostComments = response.comments
+        this.singlePost = response
       })
   },
   async addLike(id) {
@@ -75,10 +96,12 @@ export default {
     }
   },
   commentQuantity(id) {
-    return store.comments.filter((item) => item.postId == id).length
+    const index = (element) => element.id == id
+    const item = this.posts.findIndex(index)
+    return this.posts[item].comments.filter((item) => item.postId == id).length
   },
   async getPosts() {
-    const res = await fetch('http://localhost:3000/posts?_embed=comments')
+    const res = await fetch('http://localhost:3000/posts')
     const data = await res.json()
     this.posts = data
   }
