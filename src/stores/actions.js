@@ -1,3 +1,5 @@
+import router from '@/router'
+
 export default {
   async AddComment(id, text_value) {
     const newComment = {
@@ -22,8 +24,8 @@ export default {
           body: JSON.stringify({ comments: updatedComments })
         })
       })
-      .then((updatedItem) => {
-        console.log('Updated item with new comment:', updatedItem)
+      .then(() => {
+        this.singlePost.comments.push(newComment)
       })
   },
   async deletePost(id) {
@@ -91,6 +93,7 @@ export default {
         body: JSON.stringify(feedback)
       })
       this.posts.push(feedback)
+      router.push({ name: 'home' })
     } catch (error) {
       alert(error)
     }

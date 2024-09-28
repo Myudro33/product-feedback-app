@@ -3,32 +3,48 @@
     {
       "comments": [
         {
-          "id": "73582",
+          "id": "16979",
           "postId": "3",
-          "text": "nikatest"
+          "text": "dawd"
         },
         {
-          "id": "44397",
+          "id": "70816",
+          "postId": "3",
+          "text": "jjj"
+        },
+        {
+          "id": "64117",
+          "postId": "3",
+          "text": "ddddd"
+        },
+        {
+          "id": "6123",
           "postId": "3",
           "text": "test"
-        },
-        {
-          "id": "93113",
-          "postId": "3",
-          "text": "test2"
-        },
-        {
-          "id": "56874",
-          "postId": "3",
-          "text": "test3"
-        },
-        {
-          "id": "29175",
-          "postId": "3",
-          "text": "test4"
         }
       ],
-      "id": "3"
+      "id": "3",
+      "title": "test",
+      "description": "awdjawdawjd jkawd jawd jkaw",
+      "likes": 100,
+      "liked": false,
+      "type": "bug"
+    },
+    {
+      "id": "90052",
+      "title": "nika999",
+      "description": "test123",
+      "status": "suggestion",
+      "type": "Feature",
+      "likes": 0,
+      "comments": [
+        {
+          "id": "20040",
+          "postId": "90052",
+          "text": "wdawd"
+        }
+      ],
+      "liked": false
     }
   ]
 }

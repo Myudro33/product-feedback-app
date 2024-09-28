@@ -27,7 +27,9 @@
     <div class="flex items-center">
       <CommentIcon />
       <h1 class="ml-2 font-bold">
-        {{ postStore.commentQuantity(props.id) }}
+        {{
+          props.link ? postStore.commentQuantity(props.id) : postStore.singlePost.comments?.length
+        }}
       </h1>
     </div>
   </div>
