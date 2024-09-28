@@ -12,7 +12,7 @@ const postStore = usePostStore()
     <div class="w-[60vw] ml-10 h-full flex flex-col">
       <NavbarComponent />
       <FeedbackComponent
-        v-for="(item, index) in postStore.posts"
+        v-for="(item, index) in postStore.sortedPosts"
         :key="index"
         :id="item.id"
         :description="item.description"
