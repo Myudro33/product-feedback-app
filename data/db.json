@@ -21,6 +21,11 @@
           "id": "6123",
           "postId": "3",
           "text": "test"
+        },
+        {
+          "id": "71475",
+          "postId": "3",
+          "text": "testtt"
         }
       ],
       "id": "3",
@@ -42,6 +47,11 @@
           "id": "20040",
           "postId": "90052",
           "text": "wdawd"
+        },
+        {
+          "id": "19530",
+          "postId": "90052",
+          "text": "dawda"
         }
       ],
       "liked": false
