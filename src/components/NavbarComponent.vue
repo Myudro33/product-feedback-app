@@ -4,7 +4,7 @@
       <SuggestIcon />
       <h1 class="ml-2 text-xl">{{ postStore.posts.length }}</h1>
       <p @click="() => (dropDown = !dropDown)" class="flex items-center ml-5 cursor-pointer">
-        Sort by: most Upvotes
+        Sort by: {{ postStore.sortBy }}
       </p>
       <ArrowDown class="ml-1" />
     </div>
