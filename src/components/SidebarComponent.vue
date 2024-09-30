@@ -9,6 +9,7 @@
     <div class="rounded-xl mt-4 p-5 flex flex-wrap bg-[#181a1b]">
       <p
         @click="sort(items)"
+        :class="{ 'bg-blue-500': postStore.sortByType == items }"
         class="py-2 px-4 bg-[#373839] cursor-pointer rounded-xl m-1"
         v-for="(items, index) in tags"
         :key="index"
@@ -52,6 +53,6 @@ import { usePostStore } from '@/stores'
 const tags = ['All', 'UI', 'UX', 'Feature', 'Enhancement', 'Bug']
 const postStore = usePostStore()
 const sort = (by) => {
-  postStore.sortBy = by
+  postStore.sortByType = by
 }
 </script>

@@ -7,7 +7,8 @@ export const usePostStore = defineStore('postStore', {
     posts: [],
     singlePost: '',
     singlePostComments: [],
-    sortBy: ''
+    sortBy: '',
+    sortByType: ''
   }),
   actions,
   getters

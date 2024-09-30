@@ -33,7 +33,8 @@
       "description": "awdjawdawjd jkawd jawd jkaw",
       "likes": 100,
       "liked": false,
-      "type": "Bug"
+      "type": "Feature",
+      "status": "suggestion"
     },
     {
       "id": "90052",
@@ -55,6 +56,26 @@
         }
       ],
       "liked": false
+    },
+    {
+      "id": "75359",
+      "title": "mklmlwkmda",
+      "description": "adk awjdk ajwdlk awd",
+      "status": "suggestion",
+      "type": "Feature",
+      "likes": 1,
+      "comments": [],
+      "liked": true
+    },
+    {
+      "id": "31516",
+      "title": "test",
+      "description": "mwad nawjdn ajwnd aw",
+      "status": "suggestion",
+      "type": "UX",
+      "likes": 1,
+      "comments": [],
+      "liked": true
     }
   ]
 }
