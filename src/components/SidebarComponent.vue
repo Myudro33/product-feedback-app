@@ -27,21 +27,21 @@
           <div class="w-3 h-3 rounded-full bg-red-500"></div>
           <h1 class="ml-2 font-bold">Planned</h1>
         </div>
-        <h1>2</h1>
+        <h1>{{ postStore.getPlannedLength }}</h1>
       </div>
       <div class="w-full flex justify-between items-center">
         <div class="flex items-center mt-2">
           <div class="w-3 h-3 rounded-full bg-purple-700"></div>
           <h1 class="ml-2 font-bold">In-progress</h1>
         </div>
-        <h1>3</h1>
+        <h1>{{ postStore.getProgressLength }}</h1>
       </div>
       <div class="w-full flex justify-between items-center">
         <div class="flex items-center mt-2">
           <div class="w-3 h-3 rounded-full bg-cyan-600"></div>
           <h1 class="ml-2 font-bold">Live</h1>
         </div>
-        <h1>1</h1>
+        <h1>{{ postStore.getLiveLength }}</h1>
       </div>
     </div>
   </div>

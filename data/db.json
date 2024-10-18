@@ -26,6 +26,11 @@
           "id": "71475",
           "postId": "3",
           "text": "testtt"
+        },
+        {
+          "id": "3944",
+          "postId": "3",
+          "text": "ndwjandjkawnd akwjdn aw"
         }
       ],
       "id": "3",
@@ -34,13 +39,13 @@
       "likes": 100,
       "liked": false,
       "type": "Feature",
-      "status": "suggestion"
+      "status": "live"
     },
     {
       "id": "90052",
       "title": "nika999",
       "description": "test123",
-      "status": "suggestion",
+      "status": "progress",
       "type": "Feature",
       "likes": 0,
       "comments": [
@@ -61,7 +66,7 @@
       "id": "75359",
       "title": "mklmlwkmda",
       "description": "adk awjdk ajwdlk awd",
-      "status": "suggestion",
+      "status": "planned",
       "type": "Feature",
       "likes": 1,
       "comments": [],
@@ -71,7 +76,7 @@
       "id": "31516",
       "title": "test",
       "description": "mwad nawjdn ajwnd aw",
-      "status": "suggestion",
+      "status": "live",
       "type": "UX",
       "likes": 1,
       "comments": [],

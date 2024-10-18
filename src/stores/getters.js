@@ -43,5 +43,14 @@ export default {
       }
     }
     return state.posts
+  },
+  getPlannedLength: (state) => {
+    return state.posts.filter((item) => item.status == 'planned').length
+  },
+  getProgressLength: (state) => {
+    return state.posts.filter((item) => item.status == 'progress').length
+  },
+  getLiveLength: (state) => {
+    return state.posts.filter((item) => item.status == 'live').length
   }
 }
