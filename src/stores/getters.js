@@ -44,6 +44,15 @@ export default {
     }
     return state.posts
   },
+  getPlannedPosts: (state) => {
+    return state.posts.filter((item) => item.status == 'planned')
+  },
+  getProgressPosts: (state) => {
+    return state.posts.filter((item) => item.status == 'progress')
+  },
+  getLivePosts: (state) => {
+    return state.posts.filter((item) => item.status == 'live')
+  },
   getPlannedLength: (state) => {
     return state.posts.filter((item) => item.status == 'planned').length
   },
