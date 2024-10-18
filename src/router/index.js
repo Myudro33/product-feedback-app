@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AddFeedbackView from '@/views/AddFeedbackView.vue'
 import FeedbackDetail from '@/views/FeedbackDetail.vue'
 import EditFeedbackView from '@/views/EditFeedbackView.vue'
+import RoadmapView from '@/views/RoadmapView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/feedback/edit/:id',
       name: 'edit-feedback',
       component: EditFeedbackView
+    },
+    {
+      path: '/roadmap',
+      name: 'roadmap',
+      component: RoadmapView
     }
   ]
 })
