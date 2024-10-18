@@ -8,10 +8,7 @@
       </p>
       <ArrowDown class="ml-1" />
     </div>
-    <div
-      v-if="dropDown"
-      class="w-64 absolute left-80 top-14 bg-green-600 rounded-lg overflow-hidden"
-    >
+    <div v-if="dropDown" class="w-64 absolute left-80 top-14 rounded-lg overflow-hidden">
       <div
         @click="sort('most-upvotes')"
         class="w-full cursor-pointer h-14 px-5 py-3 border-b bg-red-600"

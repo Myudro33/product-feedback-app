@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-40 flex justify-between rounded-xl p-8 bg-green-700 mt-5">
+  <div class="w-full h-40 flex justify-between rounded-xl p-8 bg-black mt-5">
     <div class="flex">
       <div
         @click="postStore.addLike(props.id)"

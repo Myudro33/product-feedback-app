@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-red-900 w-full h-screen p-24 flex justify-center">
-    <div class="w-2/5 flex flex-col bg-green-950">
+  <div class="w-full h-screen p-24 flex justify-center">
+    <div class="w-2/5 flex flex-col">
       <router-link :to="{ name: 'home' }" class="flex items-center"
         ><ArrowLeft class="mr-2" /> Go Back</router-link
       >

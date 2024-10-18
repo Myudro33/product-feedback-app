@@ -7,7 +7,7 @@ const postStore = usePostStore()
 </script>
 
 <template>
-  <div class="w-screen h-screen bg-red-500 pt-24 px-52 flex">
+  <div class="w-screen pt-24 px-52 flex">
     <SidebarComponent />
     <div class="w-[60vw] ml-10 h-full flex flex-col">
       <NavbarComponent />

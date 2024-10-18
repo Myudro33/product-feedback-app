@@ -1,7 +1,7 @@
 <template>
   <h1 v-if="postStore.loading">loading...</h1>
-  <div v-else class="bg-red-500 w-full py-16 flex justify-center">
-    <div class="bg-green-500 w-[45%] flex flex-col">
+  <div v-else class="w-full py-16 flex justify-center">
+    <div class="w-[45%] flex flex-col">
       <div class="w-full flex justify-between">
         <router-link class="flex items-center" :to="{ name: 'home' }"
           ><ArrowLeft class="mr-2" /> Go Back</router-link

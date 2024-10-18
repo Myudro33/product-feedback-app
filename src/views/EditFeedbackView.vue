@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-red-900 w-full p-24 flex justify-center">
-    <div class="w-2/5 flex flex-col bg-green-950">
+  <div class="w-full p-24 flex justify-center">
+    <div class="w-2/5 flex flex-col">
       <button @click="$router.go(-1)" class="flex items-center">
         <ArrowLeft class="mr-2" /> Go Back
       </button>

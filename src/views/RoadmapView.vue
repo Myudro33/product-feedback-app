@@ -1,6 +1,6 @@
 <template>
   <div class="px-44 py-28">
-    <div class="w-full h-40 bg-red-500 rounded-2xl p-10 flex items-center justify-between">
+    <div class="w-full h-40 rounded-2xl p-10 flex items-center justify-between">
       <div>
         <router-link to="/">go back</router-link>
         <h1 class="text-3xl font-bold mt-2">Roadmap</h1>
